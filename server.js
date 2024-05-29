@@ -6,7 +6,7 @@ app.use(express.static("public"));
 app.use(express.json());
 
 // Insert your secret key here
-const SECRET_KEY = "Bearer sk_sbox_xoqyuvjelipqirtxzxqp7nq76um";
+const SECRET_KEY = "sk_sbox_xoqyuvjelipqirtxzxqp7nq76um";
 
 app.post("/create-payment-sessions", async (_req, res) => {
   // Create a PaymentSession
@@ -86,5 +86,5 @@ app.post("/create-payment-sessions", async (_req, res) => {
 });
 
 app.listen(80, () =>
-  console.log("Node server listening on port 80: http://localhost:3000/")
+  console.log("Node server Running")
 );
